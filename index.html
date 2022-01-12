@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bingo</title>
+    <link rel="stylesheet" href="style.css">
+  </style>
+</head>
+<body>
+    <header>
+        <h1>Bingo.com</h1>
+        <h2>Sua página de diversão</h2>
+            <nav>
+                <a href="#" target="_blank">home</a>
+                <a href="contato.html" target="_blank">contato</a>
+                <a href="bingo/historia.html" target="_self">sobre</a>
+            </nav>
+    </header>
+
+        <article>
+            <audio id="bola1"src="audio/numero1.ogg"  ></audio>
+            <audio id="bola2"src="audio/numero2.ogg"  ></audio>
+            <audio id="bola3"src="audio/numero3.ogg" ></audio>
+            <audio id="bola4"src="audio/numero4.ogg" ></audio>
+            <audio id="bola5"src="audio/numero5.ogg" ></audio>
+            <audio id="bola6"src="audio/numero6.ogg" ></audio> 
+            <audio id="bola7"src="audio/numero7.ogg" ></audio>
+            <audio id="bola8"src="audio/numero8.ogg" ></audio>
+            <audio id="bola9"src="audio/numero9.ogg" ></audio>
+            <audio id="bola10"src="audio/numero10.ogg"></audio>
+            <audio id="bola11"src="audio/numer11.ogg" ></audio>
+            <audio id="bola12"src="audio/numero12.ogg" ></audio>
+            <audio id="bola13"src="audio/numero13.ogg" ></audio>
+            
+            <div id="bolacentral">
+
+               
+            </div>
+
+            <p id="texto"></p>
+  
+               <script>
+                var a = Math.floor(Math.random()*10);
+                document.getElementById("texto").innerHTML= a;
+                </script>
+                            <button name="btn1" id="btn1"onclick="iniciar()"> iniciar
+                            </button>
+
+                     <script>
+       
+                         function iniciar(){
+                                        
+                            var a = Math.floor(Math.random()*10 + 5);
+                            document.getElementById("texto").innerHTML= a;
+
+                             if(a==1){
+                                document.getElementById("bola1").play();
+                             }
+                            
+                            else if(a==2) {
+                                document.getElementById("bola2").play();
+                            }
+
+                            else if(a==3){
+                                document.getElementById("bola3").play();
+
+                            }
+                            else if(a==4){
+                                document.getElementById("bola4").play();
+                            }
+                            else if(a==5){
+                                document.getElementById("bola5").play();
+                            }
+                            else if(a==6){
+                                document.getElementById("bola6").play();
+                            }   
+                            else if(a==7){
+                                document.getElementById("bola7").play();
+
+                            }
+                               
+                            else if(a==8){
+                                document.getElementById("bola8").play();
+                            }   
+                                
+                            else if(a==9){
+                                document.getElementById("bola9").play();
+                            }   
+                            else if (a==10){
+                                document.getElementById("bola10").play();
+                            }   
+                            else if(a==11){
+                                document.getElementById("bola11").play();
+                            }   
+                            else if(a==12){
+                                document.getElementById("bola12").play();
+                            }   
+                            else if(a==13){
+                                document.getElementById("bola13").play();
+                            }   
+                            else if(a==14){
+                                document.getElementById("bola14").play();
+                            }
+                            else (a>15)
+                                     
+                        }
+                            
+
+                             
+                            
+                          
+         
+                    </script>
+            </article>
+
+   
+</body>
+</html>
