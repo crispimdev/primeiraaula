@@ -1,2 +1,2 @@
 # bingo
- criaçao de pagina de bingo
+ criaçao de página de bingo
